@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--NavBar-->
+    <header class="navbar">
+
+        <!-- Left box for logo -->
+        <div class="nav-logo">
+            <i class="fa-solid fa-wallet"></i>
+            <div>ExpenseHelp</div>
+        </div>
+
+        <!--Right box for profile-->
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-user"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+            </div>
+        </div>
+
+    </header>    
+
+    <!--Analysis Block-->
+    <div class="ana-block">
+
+        <h2>Today's Expenditure</h2>
+        <div class="expense">
+
+            <div class="total">
+                <h4>Total</h4>
+                <span id="id-total">Rs.0.00</span>
+            </div>
+
+            <div class="food">
+                <h4>Food</h4>
+                <span id="id-food">Rs.0.00</span>
+            </div>
+
+            <div class="travel">
+                <h4>Travel</h4>
+                <span id="id-travel">Rs.0.00</span>
+            </div>
+
+            <div class="bills">
+                <h4>Bills</h4>
+                <span id="id-bills">Rs.0.00</span>
+            </div>
+
+            <div class="misc">
+                <h4>Misc.</h4>
+                <span id="id-misc">Rs.0.00</span>
+            </div>
+        </div>
+
+        <section>
+            <h3>Transactions</h3>
+            <ul id="transactionList"></ul>
+            <div id="status"></div>
+        </section>
+    
+        <section>
+            <h3>Add Transaction</h3>
+    
+            <form id="transactionForm">
+                <div class="options">
+                    <div>
+                        <input type="checkbox" id="food" name="food"/>
+                        <label for="food">Food</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="travel" name="travel"/>
+                        <label for="travel">Travel</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="bills" name="bills"/>
+                        <label for="bills">Bills</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="misc" name="misc"/>
+                        <label for="misc">Misc.</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required/>
+                </div>
+                <div>
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" value="0" min="0.01" step="0.01" required/>
+                </div>
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" required />
+                </div>
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+            
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
