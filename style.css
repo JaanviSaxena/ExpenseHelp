@@ -146,17 +146,6 @@ body {
     transform: translateX(0);
 }
 
-.wrapper .close-icon{
-    position: absolute;
-    width: 45px;
-    top: 10px;
-    right: 0px;
-    height:45px ;
-    font-size: 2em;
-    display: flex;
-    cursor: pointer;
-}
-
 .wrapper .form-box.login{
     width: 100%;
     padding: 40px;
@@ -316,11 +305,11 @@ body {
 .ana-block{
     display: block;
     margin-top: 5%;
-    margin-left: 50%;
+    margin-left: 60%;
     padding: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
-    max-width: 600px;
+    max-width: 500px;
     marker-end: 1rem auto;
     padding: 1rem;
     border-radius: 15px;
@@ -361,4 +350,39 @@ body {
     flex-basis: 25%;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/*------------------------------------------------Expense Report-------------------------------------------------*/
+
+.box{
+    display: block;
+    margin-top: 40px;
+    width: 60%;
+    height:40 px;
+}
+
+.box input{
+    width: 100%;
+    margin-left: 30%;
+    height: 20px;
+    border-radius:3px;
+}
+
+.box i{
+    margin-left: 100%;
+}
+
+.Pie-chart{
+    display: block;
+    width : 400px;
+    margin-left: 850px;
+    margin-top: 70px;
+}
+
+.Line-chart{
+    display: block;
+    width: 600px;
+    height: 300px;
+    margin-left: 60px;
+    background-color: transparent;
 }
