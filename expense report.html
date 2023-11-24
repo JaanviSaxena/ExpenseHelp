@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="style-expense.css">
 </head>
 <body>
 
@@ -18,8 +19,53 @@
             <i class="fa-solid fa-wallet"></i>
             <div>ExpenseHelp</div>
         </div>
+        <!--Middle box for search menu-->
+        <div class="box">
+            <input type = "text"
+            placeholder="Search for month's report">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!--Right box for profile-->
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-user"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+            </div>
+        </div>
     </header>
 
+    <!--Charts-->
+    <div class="chart-container">
+      <div class="chart">
+        <canvas id="barchart" width="300" height="300"></canvas>
+
+      </div>
+
+      <div class="chart">
+        <canvas id="doughnutchart" width="300" height="300"></canvas>
+      </div>
+    </div>
+
+    <!-- due-date reminder-->
+    <div class=due-date>
+      <h1>Due Date Reminder</h1>
+      <form id="rem-Form">
+        <label for="taskname">Task Name:</label>
+        <input type="text" id="taskname" required>
+  
+        <label for="duedate">Due Date:</label>
+        <input type="date" id="duedate" required>
+  
+        <button type="button" onclick="setReminder()">Set Reminder</button>
+      </form>
+  
+      <div id="reminder"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
     <script src="script.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
 </body>
 </html>
