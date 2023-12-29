@@ -1,0 +1,86 @@
+.chart-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:200px
+}
+
+.chart{
+    padding: 2 rem;
+    border: 1px #f49131;
+    border-radius: 3px;
+    background-color: #162938;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+}
+
+  .due-date {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 20%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #reminder {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  #doughnutchart{
+    width: 350px;
+    height: 250px;
+  }
+
+  .box{
+    display: block;
+    margin-top: 40px;
+    width: 60%;
+    height:40 px;
+}
+
+.box input{
+    width: 100%;
+    margin-left: 30%;
+    height: 20px;
+    border-radius:3px;
+}
+
+.box i{
+    margin-left: 100%;
+}
+
+.Pie-chart{
+    display: block;
+    width : 400px;
+    margin-left: 850px;
+    margin-top: 70px;
+}
+
+.Line-chart{
+    display: block;
+    width: 600px;
+    height: 300px;
+    margin-left: 60px;
+    background-color: transparent;
+}
